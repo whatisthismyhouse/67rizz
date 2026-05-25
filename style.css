@@ -1,0 +1,39 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Akt", sans-serif;
+}
+
+body {
+    background: linear-gradient(67deg, #230067, #5a0067);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-optical-sizing: auto;
+    font-weight: 670;
+    font-style: normal;
+    font-size: 33.5vw;
+    margin: 0;
+}
+
+p {
+    color: #ffffff;
+    font-family: "Akt", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 670;
+    font-style: normal;
+}
+
+#yipee {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #350067;
+}
