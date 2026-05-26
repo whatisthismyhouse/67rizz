@@ -20,6 +20,10 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    color: #ffffff;
+}
+
 p {
     color: #ffffff;
     font-family: "Akt", sans-serif;
@@ -28,12 +32,66 @@ p {
     font-style: normal;
 }
 
-#yipee {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
+#bottombar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.452);
+    
+    transform: translateY(100%);
+    transition: transform 3s ease;
+}
+
+#bottombar.show {
+    transform: translateY(0);
+}
+
+.dialogleave {
+    width: 100%;
+    background-color: black;
+    border-color: transparent;
+    color: white;
+    font-family: "Akt", sans-serif;
     cursor: pointer;
-    overflow: hidden;
+}
+
+.barbutton {
+    background-color: #0000005e;
+    color: #ffffff;
+    font-family: "Akt", sans-serif;
+    width: 20%;
+    height: 100%;
+    font-size: 2vw;
+    box-shadow: none;
+    border: none;
     outline: none;
-    color: #350067;
+    cursor: pointer;
+}
+
+.barbutton:hover {
+    background-color: #6767675e;
+}
+
+#tabascojokes {
+    background-color: #000000;
+}
+
+#tabascoleave {
+    background-color: white;
+    color: black;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
