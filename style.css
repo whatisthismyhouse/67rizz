@@ -86,6 +86,10 @@ p {
     color: black;
 }
 
+a {
+    color: rgb(0, 102, 255);
+}
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
