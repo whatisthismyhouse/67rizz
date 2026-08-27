@@ -1,5 +1,5 @@
 const yipeeButton = document.getElementById("yipee");
-const scratch = document.getElementById("scratch");
+const arcadepopup = document.getElementById("arcade");
 const primary67 = document.getElementById("primary67");
 const tlotog = document.getElementById("tlotog");
 const musicbutton = document.getElementById("musictoggle");
@@ -12,9 +12,9 @@ let musicPlaying = false;
 function swapYipee(event) {
     if (scratch.hidden) {
         yipeeButton.textContent = "No more";
-        scratch.hidden = false;
+        arcadepopup.showModal();
     } else {
-        yipeeButton.textContent = "Yipee";
+        yipeeButton.textContent = "Arcade";
         scratch.hidden = true;
     }
 }
