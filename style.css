@@ -77,11 +77,11 @@ p {
     background-color: #6767675e;
 }
 
-#tabascojokes {
+#tabascojokes, #wiki {
     background-color: #000000;
 }
 
-#tabascoleave {
+#tabascoleave, #wikileave {
     background-color: white;
     color: black;
 }
