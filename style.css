@@ -51,6 +51,39 @@ p {
     transform: translateY(0);
 }
 
+#musicguide, #about {
+    padding: 0;
+    border: none;
+    background: #00000067;
+    border-radius: 6px;
+
+    cursor: pointer;
+    width: 7%;
+    aspect-ratio: 1 / 1;
+
+    position: fixed;
+    top: 20px;
+
+    transform: translateY(-125%);
+    transition: transform 3s ease;
+}
+
+#musicguide {
+    right: 20px;
+}
+
+#about {
+    left: 20px;
+}
+
+#musicguide.show, #about.show {
+    transform: translateY(0);
+}
+
+#musicguide:hover, #about:hover {
+    background-color: #f9ccff67;
+}
+
 .dialogleave {
     width: 100%;
     background-color: black;
@@ -61,7 +94,7 @@ p {
 }
 
 .barbutton {
-    background-color: #0000005e;
+    background-color: #00000067;
     color: #ffffff;
     font-family: "Akt", sans-serif;
     width: 20%;
@@ -77,11 +110,11 @@ p {
     background-color: #6767675e;
 }
 
-#tabascojokes, #wiki {
+#tabascojokes, #wiki, #musicmodal, #aboutmodal {
     background-color: #000000;
 }
 
-#tabascoleave, #wikileave {
+#tabascoleave, #wikileave, #musicleave, #aboutleave {
     background-color: white;
     color: black;
 }

@@ -5,17 +5,21 @@ const musicbutton = document.getElementById("musictoggle");
 const contactpopup = document.getElementById("contact");
 const tabascopopup = document.getElementById("tabascojokes")
 const wikipopup = document.getElementById("wiki")
+const musicpopup = document.getElementById("musicmodal")
+const aboutpopup = document.getElementById("aboutmodal")
 
 let numberVal = 0;
 let musicPlaying = false;
 
 function incrementNum() {
     if (numberVal == 6) {
-        numberVal = 6.7;
+        numberVal = 67;
         primary67.textContent = numberVal;
         document.getElementById("bottombar").classList.toggle("show");
+        document.getElementById("musicguide").classList.toggle("show");
+        document.getElementById("about").classList.toggle("show");
     }
-    if (numberVal == 6.7) {
+    if (numberVal == 67) {
         return;
     }
     numberVal++;
@@ -32,14 +36,14 @@ function togglemusic() {
     } else {
         tlotog.pause();
         tlotog.currentTime = 0;
-        musicbutton.textContent = "Music";
+        musicbutton.textContent = "Listen";
         musicPlaying = false;
     }
 }
 
 musicbutton.onclick = togglemusic;
 tlotog.addEventListener("ended", () => {
-    musicbutton.textContent = "Music";
+    musicbutton.textContent = "Listen";
     musicPlaying = false;
 })
 
@@ -76,7 +80,27 @@ function togglewiki() {
     }
 }
 
+function musguide() {
+    if (!musicpopup.open) {
+        musicpopup.showModal();
+    } else {
+        musicpopup.close();
+    }
+}
+
+function toggleabout() {
+    if (!aboutpopup.open) {
+        aboutpopup.showModal();
+    } else {
+        aboutpopup.close();
+    }
+}
+
 document.getElementById("tabasco").onclick = toggletabasco;
 document.getElementById("tabascoleave").onclick = toggletabasco;
 document.getElementById("wikipedia").onclick = togglewiki;
 document.getElementById("wikileave").onclick = togglewiki;
+document.getElementById("musicguide").onclick = musguide;
+document.getElementById("musicleave").onclick = musguide;
+document.getElementById("about").onclick = toggleabout;
+document.getElementById("aboutleave").onclick = toggleabout;
