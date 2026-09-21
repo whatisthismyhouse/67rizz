@@ -11,6 +11,13 @@ body {
     align-items: center;
 }
 
+#fourohfour {
+    background: linear-gradient(67deg, #faae7b, #432371);
+    align-items: center;
+    justify-content: unset;
+    flex-direction: column;
+}
+
 h1 {
     color: #ffffff;
     font-optical-sizing: auto;
